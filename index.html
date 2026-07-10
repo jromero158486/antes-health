@@ -3,373 +3,528 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ANTES Health is a preventive healthtech platform that turns lab testing into risk-based screening, clear reports, and continuous follow-up before symptoms appear." />
-  <title>ANTES Health | Preventive health before symptoms appear</title>
+  <meta name="description" content="ANTES Health is a preventive healthtech platform helping people and families understand lab results, track health trends, and act before symptoms appear." />
+  <meta name="theme-color" content="#0F766E" />
+  <meta property="og:title" content="ANTES Health | Health before symptoms" />
+  <meta property="og:description" content="Preventive lab testing, clear health reports, and follow-up before symptoms appear." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-preview.svg" />
+  <title>ANTES Health | Health before symptoms</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="ANTES Health home">
-        <span class="brand-mark">A</span>
+      <a class="brand" href="#top" aria-label="ANTES Health home">
+        <img src="assets/logo.svg" alt="" class="brand-logo" />
         <span>ANTES Health</span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <div class="nav-links">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
         <a href="#story">Our Story</a>
+        <a href="#mission">Mission</a>
         <a href="#approach">Our Approach</a>
         <a href="#pilot">MVP Pilot</a>
-        <a href="#milestones">Milestones</a>
-        <a href="#contact">Contact</a>
+        <a href="#milestones">Awards</a>
         <a class="nav-cta" href="#waitlist">Join waitlist</a>
       </div>
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero section">
+  <main id="main">
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Preventive healthtech · Starting in Peru</p>
-          <h1>Health before symptoms.</h1>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Preventive health platform · pre-MVP/MVP</p>
+          <h1 id="hero-title">Health before symptoms.</h1>
           <p class="hero-text">
-            ANTES Health helps people and families know what lab tests they need,
-            understand their results, track health trends, and take responsible action before disease progresses.
+            ANTES Health helps people and families understand what preventive lab tests they need,
+            track health trends over time, and take responsible action before disease progresses.
           </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#waitlist">Join the pilot</a>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn primary" href="#waitlist">Join the waitlist</a>
             <a class="btn secondary" href="#approach">See how it works</a>
           </div>
-          <div class="hero-pills" aria-label="Key product benefits">
-            <span>Risk-based testing</span>
+          <div class="trust-row" aria-label="Core strengths">
+            <span>Risk-based screening</span>
             <span>Clear reports</span>
-            <span>Continuous follow-up</span>
+            <span>Follow-up over time</span>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Product preview">
-          <div class="floating-card report-card">
-            <div class="card-header">
+        <div class="hero-visual reveal delay-1" aria-label="ANTES Health product preview">
+          <div class="phone-mockup floating-card">
+            <div class="phone-top"></div>
+            <div class="app-header">
+              <span class="mini-logo">A</span>
               <div>
-                <span class="label">Preventive report</span>
-                <strong>Cardiometabolic profile</strong>
+                <strong>Preventive report</strong>
+                <small>Sample dashboard</small>
               </div>
-              <span class="badge">MVP</span>
             </div>
-            <div class="risk-block">
-              <span>Overall follow-up priority</span>
-              <strong>Moderate</strong>
-              <div class="bar"><span></span></div>
+            <div class="risk-card">
+              <span>Cardiometabolic overview</span>
+              <strong>Needs follow-up</strong>
+              <div class="progress-bar"><span style="width:64%"></span></div>
             </div>
-            <div class="mini-grid">
-              <div>
-                <span>Glucose</span>
-                <strong>Monitor</strong>
-              </div>
-              <div>
-                <span>Lipids</span>
-                <strong>Follow-up</strong>
-              </div>
-              <div>
-                <span>Blood pressure</span>
-                <strong>Track</strong>
-              </div>
+            <div class="marker-grid">
+              <div><small>HbA1c</small><strong>5.7%</strong><span>watch</span></div>
+              <div><small>LDL-C</small><strong>132</strong><span>trend</span></div>
+              <div><small>BP</small><strong>128/82</strong><span>repeat</span></div>
+              <div><small>eGFR</small><strong>95</strong><span>stable</span></div>
+            </div>
+            <div class="trend-card">
+              <svg viewBox="0 0 260 120" role="img" aria-label="Sample trend chart">
+                <path d="M15 92 C55 80, 65 52, 105 64 S155 102, 190 65 S228 42, 248 31" fill="none" stroke="#0F766E" stroke-width="8" stroke-linecap="round"/>
+                <path d="M15 92 C55 80, 65 52, 105 64 S155 102, 190 65 S228 42, 248 31" fill="none" stroke="#99F6E4" stroke-width="18" stroke-linecap="round" opacity=".25"/>
+                <circle cx="248" cy="31" r="8" fill="#F97363"/>
+              </svg>
+              <p><strong>Next step:</strong> review trend with a clinician if values continue rising.</p>
             </div>
           </div>
-          <div class="floating-card action-card">
-            <span class="label">Next step</span>
-            <p>Repeat key markers, discuss risk factors, and prepare questions for a healthcare professional.</p>
-          </div>
+          <div class="orbit-badge badge-one">Lab results</div>
+          <div class="orbit-badge badge-two">Clear trends</div>
+          <div class="orbit-badge badge-three">Doctor-ready summary</div>
         </div>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Positioning highlights">
-      <div class="container proof-grid">
-        <div>
-          <strong>Preventive</strong>
-          <span>Built for action before symptoms appear</span>
+    <section class="section compact problem-section" aria-labelledby="problem-title">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">The problem</p>
+          <h2 id="problem-title">The gap is not only testing. It is what happens before and after testing.</h2>
         </div>
-        <div>
-          <strong>Explainable</strong>
-          <span>Clear logic, not a black-box diagnosis</span>
-        </div>
-        <div>
-          <strong>Responsible</strong>
-          <span>Supports medical care, does not replace it</span>
+        <div class="large-copy reveal delay-1">
+          <p>
+            Many people only check their health when symptoms appear. But risks such as prediabetes,
+            hypertension, high cholesterol, anemia, and cardiometabolic disease can develop silently for years.
+          </p>
+          <p>
+            Even when people get lab results, they often receive a PDF full of numbers without clear context,
+            trends, or next steps. ANTES Health turns that confusion into a guided preventive journey.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="story" class="section story">
-      <div class="container two-col">
-        <div>
+    <section class="section" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">The solution</p>
+          <h2 id="solution-title">From lab numbers to preventive action.</h2>
+          <p>We connect the steps that are usually fragmented: risk, testing, understanding, follow-up, and referral when needed.</p>
+        </div>
+        <div class="steps reveal delay-1" aria-label="How ANTES Health works">
+          <article class="step-card"><span>01</span><h3>Risk assessment</h3><p>Users share age, family history, habits, previous results, and risk factors.</p></article>
+          <article class="step-card"><span>02</span><h3>Personalized panel</h3><p>ANTES recommends preventive tests based on risk, not generic packages.</p></article>
+          <article class="step-card"><span>03</span><h3>Lab testing</h3><p>Users complete testing through partner or collaborating laboratories.</p></article>
+          <article class="step-card"><span>04</span><h3>Clear report</h3><p>Results become plain-language explanations, visuals, and longitudinal trends.</p></article>
+          <article class="step-card"><span>05</span><h3>Follow-up</h3><p>People receive reminders, education, and guidance to consult professionals when needed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="story-card reveal">
           <p class="eyebrow">Our Story</p>
-          <h2>Lab results should not leave people confused.</h2>
+          <h2 id="story-title">Why ANTES Health exists</h2>
+          <p>
+            ANTES Health was born from a simple observation: people do not need more confusing health information;
+            they need clearer, earlier, and more responsible guidance.
+          </p>
+          <p>
+            In many families, lab results arrive as numbers on a PDF, but the real question remains unanswered:
+            <strong>“What should I do next?”</strong>
+          </p>
         </div>
-        <div class="body-copy large">
-          <p>
-            Many people only seek care after pain, fatigue, or visible symptoms. But risks such as prediabetes,
-            hypertension, high cholesterol, anemia, kidney risk, and liver risk can develop silently for years.
-          </p>
-          <p>
-            Even when people get tested, the experience often ends with a PDF full of numbers, reference ranges,
-            and medical terms. ANTES Health closes the gap between testing and action by making preventive health
-            easier to understand and easier to follow over time.
-          </p>
+        <div class="meaning-card reveal delay-1">
+          <h3>ANTES means before.</h3>
+          <ul class="check-list">
+            <li>Before symptoms.</li>
+            <li>Before complications.</li>
+            <li>Before high medical costs.</li>
+            <li>Before families feel they are too late.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section problem-cards">
+    <section class="section" id="mission" aria-labelledby="mission-title">
       <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">The gap we solve</p>
-          <h2>Preventive care is fragmented.</h2>
-          <p>Current options often sell tests, but they do not guide people through the full preventive journey.</p>
+        <div class="mission-grid reveal">
+          <div class="mission-block">
+            <p class="eyebrow">Mission</p>
+            <h2 id="mission-title">Help people understand and act earlier.</h2>
+            <p>To help people and families understand their preventive health needs, interpret their lab results, and take timely action before symptoms appear.</p>
+          </div>
+          <div class="mission-block dark">
+            <p class="eyebrow">Vision</p>
+            <h2>Preventive health infrastructure for families.</h2>
+            <p>To become the preventive health infrastructure that helps families worldwide measure what matters, understand trends, and make better health decisions earlier.</p>
+          </div>
         </div>
-        <div class="cards three">
-          <article class="feature-card">
-            <span class="icon">01</span>
-            <h3>Generic checkups</h3>
-            <p>People are offered broad lab packages that may not match their age, family history, or risk factors.</p>
-          </article>
-          <article class="feature-card">
-            <span class="icon">02</span>
-            <h3>Confusing results</h3>
-            <p>Reports show numbers and reference ranges, but little context about what matters and why.</p>
-          </article>
-          <article class="feature-card">
-            <span class="icon">03</span>
-            <h3>No follow-up</h3>
-            <p>A single result rarely changes behavior. People need reminders, trends, and responsible next steps.</p>
-          </article>
+        <div class="values reveal delay-1" aria-label="ANTES Health values">
+          <article><span>01</span><h3>Prevention before reaction</h3></article>
+          <article><span>02</span><h3>Clarity over confusion</h3></article>
+          <article><span>03</span><h3>Evidence before hype</h3></article>
+          <article><span>04</span><h3>Human guidance, not fear</h3></article>
+          <article><span>05</span><h3>Privacy and trust by design</h3></article>
         </div>
       </div>
     </section>
 
-    <section id="approach" class="section approach">
-      <div class="container approach-grid">
-        <div class="approach-copy">
+    <section class="section approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-heading reveal">
           <p class="eyebrow">Our Approach</p>
-          <h2>From lab numbers to a preventive health journey.</h2>
+          <h2 id="approach-title">Risk-based, understandable, and continuous prevention.</h2>
           <p>
-            ANTES Health connects risk assessment, appropriate testing, clear interpretation, longitudinal tracking,
-            and follow-up in one simple experience.
+            ANTES Health does not start with a generic lab package. We start with the person: age, family history,
+            habits, previous results, and risk factors. Then we connect testing, understanding, and follow-up into one preventive journey.
           </p>
         </div>
-        <div class="steps">
-          <div class="step">
-            <span>1</span>
-            <div>
-              <h3>Risk assessment</h3>
-              <p>Users answer questions about age, family history, habits, previous results, and cardiometabolic risks.</p>
-            </div>
+
+        <div class="evidence-panel reveal delay-1" aria-label="Evidence principles behind ANTES Health">
+          <div class="evidence-intro">
+            <h3>A prevention journey built on evidence</h3>
+            <p>Our MVP is guided by preventive screening recommendations, health literacy principles, and responsible digital health design.</p>
           </div>
-          <div class="step">
-            <span>2</span>
-            <div>
-              <h3>Personalized panel</h3>
-              <p>We recommend preventive tests that fit the user profile instead of pushing unnecessary packages.</p>
-            </div>
+          <div class="evidence-grid">
+            <a class="evidence-card" href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hypertension-in-adults-screening" target="_blank" rel="noopener">
+              <span>01</span><h4>Screening should be risk-aware</h4><p>Hypertension screening is recommended for adults, with confirmation outside the clinical setting before treatment.</p>
+            </a>
+            <a class="evidence-card" href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes" target="_blank" rel="noopener">
+              <span>02</span><h4>Prevention needs next steps</h4><p>Prediabetes screening guidance emphasizes referral to effective preventive interventions when risk is found.</p>
+            </a>
+            <a class="evidence-card" href="https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf" target="_blank" rel="noopener">
+              <span>03</span><h4>Abnormal results need confirmation</h4><p>Kidney guidelines emphasize GFR and albuminuria for people at risk, plus repeat testing to confirm abnormal findings.</p>
+            </a>
+            <a class="evidence-card" href="https://www.who.int/publications/i/item/9789240029200" target="_blank" rel="noopener">
+              <span>04</span><h4>AI must be responsible</h4><p>AI can support communication and workflows, but health products need governance, human oversight, privacy, and safety.</p>
+            </a>
           </div>
-          <div class="step">
-            <span>3</span>
-            <div>
-              <h3>Laboratory testing</h3>
-              <p>Users complete testing through collaborating or partner laboratories.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span>4</span>
-            <div>
-              <h3>Clear report</h3>
-              <p>We transform lab values into visual explanations, priorities, and trend-based insights.</p>
-            </div>
-          </div>
-          <div class="step">
-            <span>5</span>
-            <div>
-              <h3>Follow-up</h3>
-              <p>Users receive reminders, education, and guidance on when to repeat tests or consult a professional.</p>
-            </div>
-          </div>
+        </div>
+
+        <div class="approach-cards reveal">
+          <article><h3>Risk-based screening</h3><p>We recommend preventive tests based on the person’s profile, not one-size-fits-all packages.</p></article>
+          <article><h3>Lab results in context</h3><p>We explain what values may mean, what changed, and what deserves follow-up.</p></article>
+          <article><h3>Trends over time</h3><p>We focus on health trajectories, not isolated numbers.</p></article>
+          <article><h3>Follow-up support</h3><p>We send reminders and education so users know what to do after testing.</p></article>
+          <article><h3>Human-supervised AI</h3><p>AI supports communication and workflow. It does not diagnose or replace medical care.</p></article>
+          <article><h3>Referral when needed</h3><p>When values suggest concern, we guide users toward qualified professionals.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section product">
-      <div class="container product-grid">
-        <div class="product-card dark">
-          <p class="eyebrow">First focus</p>
-          <h2>Cardiometabolic prevention.</h2>
-          <p>
-            Our first MVP focuses on adults who want to understand and monitor risks related to diabetes,
-            hypertension, cholesterol, overweight, sedentary lifestyle, and family history.
-          </p>
-        </div>
-        <div class="marker-grid">
-          <div><span>Glucose</span></div>
-          <div><span>HbA1c</span></div>
-          <div><span>Lipid profile</span></div>
-          <div><span>Blood pressure</span></div>
-          <div><span>Kidney markers</span></div>
-          <div><span>Liver markers</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pilot" class="section pilot">
-      <div class="container pilot-box">
-        <div>
-          <p class="eyebrow">MVP Pilot</p>
-          <h2>Testing the first supervised version with 30–50 users.</h2>
-          <p>
-            We are preparing a small pilot in Lima for adults aged 30–55 with risk factors such as family history
-            of diabetes, hypertension, high cholesterol, overweight, or sedentary lifestyle.
-          </p>
-          <a class="btn primary" href="#waitlist">I want to join</a>
-        </div>
-        <ul class="checklist">
-          <li>Preventive health risk assessment</li>
-          <li>Personalized testing recommendation</li>
-          <li>Lab testing coordination</li>
-          <li>Visual preventive health report</li>
-          <li>12-week WhatsApp follow-up</li>
-          <li>Referral to healthcare professionals when needed</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="milestones" class="section milestones">
+    <section class="section flow-section" aria-labelledby="flow-title">
       <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">Milestones</p>
-          <h2>Built from health, engineering, and innovation ecosystems.</h2>
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Data flow</p>
+          <h2 id="flow-title">From lab results to action.</h2>
+          <p>Fragmented health data becomes a clear preventive journey for the person, family, and clinician when appropriate.</p>
         </div>
-        <div class="timeline">
-          <article>
-            <span>Startup</span>
-            <h3>Impact Startup Competition · Peru</h3>
-            <p>Selected to participate in a startup competition supporting early-stage impact-driven ventures.</p>
-          </article>
-          <article>
-            <span>AI infrastructure</span>
-            <h3>Claude Startups Program</h3>
-            <p>Accepted to explore startup resources for building clearer preventive reports and follow-up workflows.</p>
-          </article>
-          <article>
-            <span>Health innovation</span>
-            <h3>Cleveland NeuroDesign Workshop · Ohio</h3>
-            <p>Founder selected for a health innovation workshop focused on clinical needs, product thinking, and medical technology.</p>
-          </article>
-          <article>
-            <span>Leadership</span>
-            <h3>IEEE Summer International Leadership Academy</h3>
-            <p>Founder participated in an international program focused on STEM leadership, innovation, and execution.</p>
-          </article>
+        <div class="data-flow reveal delay-1" aria-label="Animated flow map from health inputs to ANTES Health report and follow-up">
+          <div class="flow-fallback">
+            Inputs such as profile, family history, habits, previous results, and lab results flow into the ANTES Health prevention layer, producing a clear report, reminders, suggested next steps, doctor-ready summaries, and family views with consent.
+          </div>
+          <svg class="flow-map" viewBox="0 0 1180 620" role="img" aria-labelledby="flowSvgTitle flowSvgDesc">
+            <title id="flowSvgTitle">ANTES Health data flow map</title>
+            <desc id="flowSvgDesc">Health profile and laboratory inputs flow into a prevention layer and then into personal reports, doctor summaries, and follow-up.</desc>
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L10,5 L0,10 z" fill="#0F766E" opacity=".65" />
+              </marker>
+              <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <g class="flow-paths">
+              <path class="flow-line" d="M220 115 C360 120 410 250 525 300"/>
+              <path class="flow-line" d="M220 205 C350 205 420 270 525 310"/>
+              <path class="flow-line" d="M220 295 C350 295 420 310 525 320"/>
+              <path class="flow-line" d="M220 385 C350 385 420 350 525 330"/>
+              <path class="flow-line" d="M220 475 C360 470 420 365 525 340"/>
+              <path class="flow-line output" d="M660 300 C760 230 820 145 955 110"/>
+              <path class="flow-line output" d="M660 315 C790 300 830 220 955 205"/>
+              <path class="flow-line output" d="M660 330 C790 330 835 315 955 315"/>
+              <path class="flow-line output" d="M660 345 C790 385 835 430 955 430"/>
+              <path class="flow-line output" d="M660 360 C760 470 830 520 955 525"/>
+            </g>
+
+            <g class="particles" aria-hidden="true">
+              <circle class="particle p1" r="7" fill="#F97363"/>
+              <circle class="particle p2" r="6" fill="#99F6E4"/>
+              <circle class="particle p3" r="6" fill="#0F766E"/>
+              <circle class="particle p4" r="7" fill="#F97363"/>
+              <circle class="particle p5" r="6" fill="#99F6E4"/>
+            </g>
+
+            <g class="nodes inputs">
+              <g class="flow-node" data-tip="Basic profile helps determine which preventive tests make sense."><rect x="40" y="78" width="180" height="74" rx="22"/><text x="65" y="122">Age & profile</text></g>
+              <g class="flow-node" data-tip="Family history can change prevention priorities."><rect x="40" y="168" width="180" height="74" rx="22"/><text x="65" y="212">Family history</text></g>
+              <g class="flow-node" data-tip="Habits help contextualize risk and follow-up."><rect x="40" y="258" width="180" height="74" rx="22"/><text x="65" y="302">Habits & lifestyle</text></g>
+              <g class="flow-node" data-tip="Previous results reveal trends, not only isolated values."><rect x="40" y="348" width="180" height="74" rx="22"/><text x="65" y="392">Previous results</text></g>
+              <g class="flow-node" data-tip="Lab values become clearer when they are linked to risk, trends, and next steps."><rect x="40" y="438" width="180" height="74" rx="22"/><text x="65" y="482">Lab results</text></g>
+            </g>
+
+            <g class="center-layer" filter="url(#softGlow)">
+              <rect x="500" y="226" width="190" height="180" rx="34" fill="#0F766E"/>
+              <text x="595" y="277" text-anchor="middle" fill="#fff" font-weight="800">ANTES</text>
+              <text x="595" y="304" text-anchor="middle" fill="#fff" font-weight="800">prevention</text>
+              <text x="595" y="332" text-anchor="middle" fill="#D1FAE5" font-size="16">risk logic</text>
+              <text x="595" y="356" text-anchor="middle" fill="#D1FAE5" font-size="16">trends · clarity</text>
+            </g>
+
+            <g class="nodes outputs">
+              <g class="flow-node" data-tip="A clear report for the person, not a confusing PDF."><rect x="955" y="73" width="185" height="74" rx="22"/><text x="985" y="117">Personal report</text></g>
+              <g class="flow-node" data-tip="Timely reminders help users continue prevention over time."><rect x="955" y="168" width="185" height="74" rx="22"/><text x="985" y="212">Follow-up reminders</text></g>
+              <g class="flow-node" data-tip="Next steps may include repeating a test, changing habits, or seeking care."><rect x="955" y="278" width="185" height="74" rx="22"/><text x="985" y="322">Suggested next steps</text></g>
+              <g class="flow-node" data-tip="A concise summary can help clinicians review context faster."><rect x="955" y="393" width="185" height="74" rx="22"/><text x="985" y="437">Doctor-ready summary</text></g>
+              <g class="flow-node" data-tip="Family views are only with consent and user control."><rect x="955" y="488" width="185" height="74" rx="22"/><text x="985" y="532">Family view + consent</text></g>
+            </g>
+          </svg>
+          <div class="tooltip" role="status" aria-live="polite"></div>
         </div>
       </div>
     </section>
 
-    <section class="section founder">
-      <div class="container founder-grid">
-        <div class="founder-card">
-          <div class="avatar">JR</div>
-          <h3>Joselyn Romero Avila</h3>
-          <p>Founder & CEO / Scientific and Product Lead</p>
+    <section class="section do-dont-section" aria-labelledby="safe-title">
+      <div class="container do-dont-grid">
+        <div class="panel reveal">
+          <h2 id="safe-title">What we do</h2>
+          <ul class="check-list">
+            <li>Recommend preventive tests based on risk profile.</li>
+            <li>Transform lab results into understandable explanations.</li>
+            <li>Track markers over time.</li>
+            <li>Send reminders and follow-up prompts.</li>
+            <li>Suggest responsible next steps.</li>
+            <li>Refer to healthcare professionals when needed.</li>
+          </ul>
         </div>
-        <div>
-          <p class="eyebrow">Founder</p>
-          <h2>Biomedical engineering for clearer prevention.</h2>
-          <p class="body-copy">
-            ANTES Health was founded by Joselyn Romero Avila, a Peruvian Biomedical Engineering student with experience
-            in medical AI, biosensing, medical imaging, and digital health research. The company is currently built by a
-            two-person team, with the founder working full-time on the project.
+        <div class="panel warning reveal delay-1">
+          <h2>What we do not do</h2>
+          <ul class="check-list">
+            <li>We do not replace physicians.</li>
+            <li>We do not provide emergency care.</li>
+            <li>We do not diagnose automatically.</li>
+            <li>We do not sell unnecessary testing.</li>
+            <li>We do not share health data without consent.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section report-section" aria-labelledby="report-title">
+      <div class="container report-grid">
+        <div class="reveal">
+          <p class="eyebrow">Product mockup</p>
+          <h2 id="report-title">A report people can actually use.</h2>
+          <p>
+            The goal is not to overwhelm people with more data. It is to organize what matters: key markers,
+            what changed, what to watch, suggested next steps, and a doctor-ready summary.
           </p>
-          <div class="founder-links">
-            <a href="https://www.linkedin.com/in/joselyn-romero-avila-257570205/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:joselyn.romero1@unmsm.edu.pe">Email</a>
+          <p class="small-note">Sample data for design only. Not medical advice.</p>
+        </div>
+        <div class="report-mockup reveal delay-1" aria-label="Sample ANTES Health report mockup">
+          <div class="report-header">
+            <div><strong>Your preventive health report</strong><span>Sample · cardiometabolic</span></div>
+            <span class="pill">Follow-up</span>
+          </div>
+          <div class="report-section-mini">
+            <h4>Key markers</h4>
+            <div class="mini-table">
+              <div><span>HbA1c</span><strong>5.7%</strong><em>watch</em></div>
+              <div><span>LDL-C</span><strong>132 mg/dL</strong><em>trend</em></div>
+              <div><span>Blood pressure</span><strong>128/82</strong><em>repeat</em></div>
+              <div><span>eGFR</span><strong>95</strong><em>stable</em></div>
+            </div>
+          </div>
+          <div class="report-section-mini highlight">
+            <h4>Suggested next step</h4>
+            <p>Repeat blood pressure measurements and review cardiometabolic risk with a qualified healthcare professional if values continue rising.</p>
+          </div>
+          <div class="doctor-summary">
+            <span>Doctor-ready summary</span>
+            <p>Risk context, trend chart, selected markers, user questions, and follow-up history in one view.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section responsible">
-      <div class="container responsible-grid">
-        <div class="disclaimer-card">
-          <h3>What we do</h3>
-          <p>We help users organize preventive health information, understand lab trends, and prepare better next steps.</p>
+    <section class="section pilot-section" id="pilot" aria-labelledby="pilot-title">
+      <div class="container pilot-grid">
+        <div class="reveal">
+          <p class="eyebrow">MVP Pilot</p>
+          <h2 id="pilot-title">Our first supervised MVP pilot.</h2>
+          <p>
+            We are preparing a supervised MVP pilot with 30–50 adults aged 30–55 in Lima, Peru,
+            focused on cardiometabolic prevention.
+          </p>
+          <a class="btn primary" href="#waitlist">Join the pilot waitlist</a>
         </div>
-        <div class="disclaimer-card muted">
-          <h3>What we do not do</h3>
-          <p>ANTES Health does not provide automatic diagnoses, prescribe treatment, or replace professional medical care.</p>
+        <div class="pilot-cards reveal delay-1">
+          <article><h3>Who</h3><p>Adults 30–55 with family history of diabetes, hypertension risk, high cholesterol, overweight, or sedentary lifestyle.</p></article>
+          <article><h3>What participants receive</h3><p>Risk assessment, suggested lab panel, clear report, 12-week WhatsApp follow-up, education, and referral guidance.</p></article>
+          <article><h3>What we measure</h3><p>Assessment completion, testing conversion, understanding, engagement, willingness to pay, next-step actions, and satisfaction/NPS.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="waitlist" class="section waitlist">
-      <div class="container waitlist-box">
-        <div>
-          <p class="eyebrow">Join the waitlist</p>
-          <h2>Be part of the first ANTES Health pilot.</h2>
+    <section class="section partners-section" id="partners" aria-labelledby="partners-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="eyebrow">Partnerships</p>
+          <h2 id="partners-title">Designed to complement clinicians, labs, and health organizations.</h2>
+          <p>ANTES Health is looking for partners interested in responsible preventive health pilots.</p>
+        </div>
+        <div class="partner-grid reveal delay-1">
+          <article><h3>Laboratories</h3><p>Improve interpretation and follow-up after testing.</p></article>
+          <article><h3>Clinicians</h3><p>Receive clearer summaries and better prepared users.</p></article>
+          <article><h3>Employers & universities</h3><p>Offer preventive health programs to members and teams.</p></article>
+          <article><h3>Researchers</h3><p>Collaborate on health literacy, digital prevention, and implementation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section milestones-section" id="milestones" aria-labelledby="milestones-title">
+      <div class="container milestones-grid">
+        <div class="reveal">
+          <p class="eyebrow">Awards & Milestones</p>
+          <h2 id="milestones-title">Building through health innovation ecosystems.</h2>
           <p>
-            We are looking for early users, healthcare collaborators, laboratories, and mentors interested in building
-            a more understandable preventive health experience.
+            ANTES Health is early, but we are already building through entrepreneurship, health innovation,
+            and technology ecosystems that strengthen our execution.
+          </p>
+          <p class="small-note">Edit milestone labels before publishing if any program is still pending or not officially confirmed.</p>
+        </div>
+        <div class="timeline reveal delay-1">
+          <div class="timeline-item"><span></span><h3>Impact Startup Competition Peru</h3><p>Selected / participant — confirm final wording before publishing.</p></div>
+          <div class="timeline-item"><span></span><h3>Claude Startups Program</h3><p>Accepted only if confirmed; otherwise update to “applying to.”</p></div>
+          <div class="timeline-item"><span></span><h3>Cleveland NeuroDesign Workshop</h3><p>Health innovation workshop in Cleveland, Ohio.</p></div>
+          <div class="timeline-item"><span></span><h3>IEEE Summer International Leadership Academy</h3><p>Innovation and leadership experience supporting founder execution.</p></div>
+          <div class="timeline-item"><span></span><h3>MVP pilot in preparation</h3><p>First supervised preventive health pilot planned for Lima.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section founder-section" aria-labelledby="founder-title">
+      <div class="container founder-grid">
+        <div class="founder-photo reveal" role="img" aria-label="Founder photo placeholder">
+          <div class="photo-placeholder">JR</div>
+        </div>
+        <div class="founder-copy reveal delay-1">
+          <p class="eyebrow">Founder</p>
+          <h2 id="founder-title">Joselyn Romero Avila</h2>
+          <p class="role">Founder & CEO / Scientific and Product Lead</p>
+          <p>
+            Joselyn is a Peruvian Biomedical Engineering student working at the intersection of medical AI,
+            biosensing, medical imaging, and digital health. She is building ANTES Health to make preventive care
+            more understandable, continuous, and accessible.
+          </p>
+          <div class="founder-tags">
+            <span>Biomedical engineering</span><span>Medical AI</span><span>Digital health</span><span>Preventive care</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section investor-section" id="investors" aria-labelledby="investor-title">
+      <div class="container investor-card reveal">
+        <div>
+          <p class="eyebrow">For investors</p>
+          <h2 id="investor-title">Preparing for pre-seed validation.</h2>
+          <p>
+            ANTES Health is preparing a pre-seed round to build and validate the MVP, run the first supervised pilot,
+            develop the risk-based recommendation engine, and establish laboratory and clinical partnerships.
           </p>
         </div>
-        <form class="lead-form" action="https://formspree.io/f/REPLACE_THIS_ID" method="POST">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@email.com" required>
-          </label>
-          <label>
-            I am interested as
+        <a class="btn secondary light" href="mailto:joselynromero9@gmail.com?subject=ANTES%20Health%20Investor%20Deck">Request investor deck</a>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Questions people should ask before trusting a health product.</h2>
+        </div>
+        <div class="faq-list reveal delay-1">
+          <details><summary>Does ANTES Health replace a doctor?</summary><p>No. ANTES Health supports prevention, education, follow-up, and referral. It does not replace medical care.</p></details>
+          <details><summary>Is ANTES Health available now?</summary><p>We are preparing our first supervised MVP pilot.</p></details>
+          <details><summary>Who is the first pilot for?</summary><p>Adults aged 30–55 in Lima with cardiometabolic risk factors.</p></details>
+          <details><summary>What tests are included?</summary><p>The first focus is cardiometabolic health, including markers such as blood pressure, glucose/HbA1c, lipids, kidney markers, and other tests only when appropriate.</p></details>
+          <details><summary>How do you protect health data?</summary><p>We are designing the platform around consent, privacy, and user control.</p></details>
+          <details><summary>Can families use it together?</summary><p>Yes, the long-term vision includes family-centered prevention with consent and privacy controls.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section waitlist-section" id="waitlist" aria-labelledby="waitlist-title">
+      <div class="container waitlist-grid">
+        <div class="reveal">
+          <p class="eyebrow">Join Waitlist</p>
+          <h2 id="waitlist-title">Help us build health before symptoms.</h2>
+          <p>
+            Join the waitlist for the first ANTES Health pilot or contact us as a partner, clinician, laboratory,
+            investor, or researcher.
+          </p>
+          <p class="contact-line">Contact: <a href="mailto:joselynromero9@gmail.com">joselynromero9@gmail.com</a></p>
+        </div>
+        <form class="waitlist-form reveal delay-1" action="https://formspree.io/f/REPLACE_THIS_ID" method="POST">
+          <!-- TODO: Replace REPLACE_THIS_ID with your Formspree endpoint, or connect this form to Tally/Google Forms. -->
+          <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required /></label>
+          <label>City / country<input type="text" name="location" placeholder="Lima, Peru" /></label>
+          <label>I am interested as
             <select name="interest" required>
-              <option value="">Select an option</option>
-              <option>Potential pilot user</option>
-              <option>Healthcare professional</option>
-              <option>Laboratory partner</option>
-              <option>Investor or mentor</option>
-              <option>Other</option>
+              <option value="">Select one</option>
+              <option>User</option><option>Family member</option><option>Clinician</option><option>Laboratory</option><option>Employer</option><option>Investor</option><option>Partner</option><option>Researcher</option>
             </select>
           </label>
-          <label>
-            Message
-            <textarea name="message" placeholder="Tell us briefly why you are interested"></textarea>
+          <label>What preventive health problem do you care about?
+            <textarea name="message" rows="4" placeholder="Optional"></textarea>
           </label>
-          <label class="consent">
-            <input type="checkbox" name="consent" required>
-            <span>I understand that ANTES Health does not replace medical consultation or emergency care.</span>
-          </label>
-          <button class="btn primary full" type="submit">Join waitlist</button>
-          <p class="form-note">You can replace this form with Tally, Typeform, Google Forms, or Formspree.</p>
+          <button class="btn primary" type="submit">Submit interest</button>
+          <p class="form-note">If the form is not connected yet, email us directly at joselynromero9@gmail.com.</p>
         </form>
+      </div>
+    </section>
+
+    <section class="section disclaimer-strip" aria-label="Medical disclaimer">
+      <div class="container">
+        <p>
+          <strong>Medical disclaimer:</strong> ANTES Health is not a medical provider and does not provide diagnosis, treatment,
+          emergency care, or medical advice. The platform is being developed to support preventive education, organization of health information,
+          follow-up, and referral guidance. Users should consult qualified healthcare professionals for medical decisions and seek emergency care when needed.
+        </p>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#home">
-          <span class="brand-mark">A</span>
-          <span>ANTES Health</span>
-        </a>
-        <p>Preventive health before symptoms appear.</p>
+        <a class="brand footer-brand" href="#top"><img src="assets/logo.svg" alt="" class="brand-logo" /><span>ANTES Health</span></a>
+        <p>Preventive health before symptoms.</p>
       </div>
-      <div class="footer-links">
-        <a href="#story">Story</a>
-        <a href="#approach">Approach</a>
-        <a href="#pilot">Pilot</a>
-        <a href="mailto:joselyn.romero1@unmsm.edu.pe">Contact</a>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#partners">For Partners</a>
+        <a href="#investors">For Investors</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy.html">Privacy & Data Protection</a>
+        <a href="medical-disclaimer.html">Medical Disclaimer</a>
       </div>
     </div>
   </footer>

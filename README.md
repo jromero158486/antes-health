@@ -1,45 +1,89 @@
-# ANTES Health Landing Page
+# ANTES Health Complete Website
 
-Static GitHub Pages landing page for ANTES Health.
+Static GitHub Pages website for **ANTES Health**.
 
-## Files
+## Included
 
-- `index.html`: page structure and content.
-- `styles.css`: responsive visual design.
-- `script.js`: mobile navigation.
+- `index.html` — full healthtech startup website with sections:
+  - Home
+  - Our Story
+  - Mission & Vision
+  - Our Approach
+  - Animated data-flow map
+  - Product report mockup
+  - MVP Pilot
+  - Partners / Investors
+  - Awards & Milestones
+  - Founder
+  - FAQ
+  - Waitlist
+- `styles.css` — responsive design, color palette, animations, accessibility styles
+- `script.js` — mobile menu, scroll reveal, data-flow activation, node tooltips
+- `privacy.html` — early placeholder for privacy and data protection
+- `medical-disclaimer.html` — medical disclaimer page
+- `assets/logo.svg` — custom SVG logo
+- `assets/og-preview.svg` — social sharing preview
+
+## Brand palette
+
+- Cream background: `#FAF7F2`
+- Text: `#1F2933`
+- Deep health green: `#0F766E`
+- Mint accent: `#99F6E4`
+- Coral CTA: `#F97363`
+- White cards: `#FFFFFF`
+- Border gray: `#E5E7EB`
 
 ## Before publishing
 
-1. Replace the form action in `index.html`:
+1. Replace the Formspree placeholder in `index.html`:
 
 ```html
 action="https://formspree.io/f/REPLACE_THIS_ID"
 ```
 
-You can use Formspree, Tally, Typeform, Google Forms, or another form provider.
+2. Confirm milestone wording before publishing:
 
-2. Confirm all milestone claims are accurate before publishing, especially:
-   - Impact Startup Competition · Peru
-   - Claude Startups Program
-   - Cleveland NeuroDesign Workshop
-   - IEEE Summer International Leadership Academy
+- Impact Startup Competition Peru — selected / participant
+- Claude Startups Program — accepted only if officially confirmed
+- Cleveland NeuroDesign Workshop — confirm final wording
+- IEEE Summer International Leadership Academy — confirm final wording
 
-3. If needed, edit the founder/team sentence in the Founder section:
+3. Replace founder placeholder with your photo if desired:
 
 ```html
-The company is currently built by a two-person team, with the founder working full-time on the project.
+<div class="founder-photo">...</div>
 ```
 
-## Deploy with GitHub Pages
+4. Review medical disclaimer and privacy language before MVP launch.
 
-1. Upload these files to the root of your GitHub repository.
+## GitHub Pages deployment
+
+1. Upload these files to your `antes-health` GitHub repository.
 2. Go to **Settings → Pages**.
-3. Choose **Deploy from a branch**.
+3. Select **Deploy from a branch**.
 4. Select branch `main` and folder `/root`.
-5. Save.
-
-Your site will be available at a URL like:
+5. Visit:
 
 ```text
-https://YOUR-USER.github.io/antes-health/
+https://jromero158486.github.io/antes-health/
 ```
+
+## Medical wording guardrails
+
+Use:
+
+- preventive guidance
+- education
+- follow-up
+- risk-based screening
+- doctor-ready summary
+- referral when needed
+
+Avoid:
+
+- diagnosis
+- treatment recommendation
+- AI doctor
+- detect disease
+- replace doctor
