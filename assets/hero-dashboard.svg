@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 760" role="img" aria-label="ANTES Health product dashboard mockup">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#1F2933" flood-opacity=".18"/></filter>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E8FBF7"/><stop offset="1" stop-color="#FAF7F2"/></linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F97363"/><stop offset="1" stop-color="#F9B4A6"/></linearGradient>
+  </defs>
+  <rect width="980" height="760" rx="54" fill="url(#mint)"/>
+  <circle cx="842" cy="98" r="82" fill="#99F6E4" opacity=".42"/>
+  <circle cx="145" cy="635" r="120" fill="#F97363" opacity=".10"/>
+  <g filter="url(#shadow)">
+    <rect x="112" y="82" width="756" height="560" rx="42" fill="#fff"/>
+    <rect x="112" y="82" width="756" height="92" rx="42" fill="#0F766E"/>
+    <circle cx="171" cy="128" r="18" fill="#99F6E4"/>
+    <circle cx="224" cy="128" r="18" fill="#FAF7F2" opacity=".8"/>
+    <circle cx="277" cy="128" r="18" fill="#F97363" opacity=".8"/>
+    <text x="338" y="137" font-family="Inter, Arial" font-size="25" font-weight="800" fill="#fff">Preventive health report</text>
+    <rect x="150" y="214" width="252" height="166" rx="28" fill="#FAF7F2"/>
+    <text x="178" y="260" font-family="Inter, Arial" font-size="20" font-weight="800" fill="#1F2933">Risk profile</text>
+    <text x="178" y="294" font-family="Inter, Arial" font-size="15" fill="#667085">Family history + habits</text>
+    <rect x="178" y="322" width="174" height="16" rx="8" fill="#E5E7EB"/>
+    <rect x="178" y="322" width="110" height="16" rx="8" fill="#0F766E"/>
+    <rect x="433" y="214" width="182" height="166" rx="28" fill="#E8FBF7"/>
+    <text x="461" y="260" font-family="Inter, Arial" font-size="20" font-weight="800" fill="#1F2933">HbA1c</text>
+    <text x="461" y="316" font-family="Inter, Arial" font-size="44" font-weight="900" fill="#0F766E">5.7%</text>
+    <text x="461" y="346" font-family="Inter, Arial" font-size="15" fill="#667085">watch trend</text>
+    <rect x="644" y="214" width="182" height="166" rx="28" fill="#FFF4EF"/>
+    <text x="672" y="260" font-family="Inter, Arial" font-size="20" font-weight="800" fill="#1F2933">LDL-C</text>
+    <text x="672" y="316" font-family="Inter, Arial" font-size="44" font-weight="900" fill="#F97363">132</text>
+    <text x="672" y="346" font-family="Inter, Arial" font-size="15" fill="#667085">context needed</text>
+    <rect x="150" y="414" width="392" height="172" rx="30" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="178" y="462" font-family="Inter, Arial" font-size="20" font-weight="800" fill="#1F2933">Trend over time</text>
+    <path d="M184 545 C242 526 264 478 322 499 C388 523 403 562 462 512 C494 485 512 462 526 449" fill="none" stroke="#99F6E4" stroke-width="22" stroke-linecap="round" opacity=".35"/>
+    <path d="M184 545 C242 526 264 478 322 499 C388 523 403 562 462 512 C494 485 512 462 526 449" fill="none" stroke="#0F766E" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="526" cy="449" r="12" fill="#F97363"/>
+    <rect x="574" y="414" width="252" height="172" rx="30" fill="#1F2933"/>
+    <text x="606" y="462" font-family="Inter, Arial" font-size="20" font-weight="800" fill="#fff">Next step</text>
+    <text x="606" y="498" font-family="Inter, Arial" font-size="16" fill="#D1D5DB">Repeat and discuss if</text>
+    <text x="606" y="524" font-family="Inter, Arial" font-size="16" fill="#D1D5DB">values keep rising.</text>
+    <rect x="606" y="548" width="148" height="26" rx="13" fill="#99F6E4"/>
+    <text x="629" y="567" font-family="Inter, Arial" font-size="13" font-weight="800" fill="#0A4D48">Doctor-ready</text>
+  </g>
+  <g>
+    <rect x="42" y="486" width="226" height="82" rx="24" fill="#fff" filter="url(#shadow)"/>
+    <circle cx="84" cy="527" r="20" fill="#99F6E4"/>
+    <text x="118" y="520" font-family="Inter, Arial" font-size="17" font-weight="800" fill="#1F2933">Lab results</text>
+    <text x="118" y="546" font-family="Inter, Arial" font-size="14" fill="#667085">organized</text>
+    <rect x="704" y="613" width="222" height="82" rx="24" fill="#fff" filter="url(#shadow)"/>
+    <circle cx="746" cy="654" r="20" fill="#F97363" opacity=".85"/>
+    <text x="780" y="647" font-family="Inter, Arial" font-size="17" font-weight="800" fill="#1F2933">Follow-up</text>
+    <text x="780" y="673" font-family="Inter, Arial" font-size="14" fill="#667085">not forgotten</text>
+  </g>
+</svg>

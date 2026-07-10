@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-label="Family prevention illustration">
+  <rect width="760" height="520" rx="44" fill="#E8FBF7"/>
+  <circle cx="120" cy="95" r="68" fill="#99F6E4" opacity=".55"/>
+  <circle cx="640" cy="410" r="86" fill="#F97363" opacity=".12"/>
+  <g fill="#fff" stroke="#E5E7EB" stroke-width="2">
+    <rect x="80" y="170" width="174" height="196" rx="26"/>
+    <rect x="293" y="114" width="174" height="252" rx="26"/>
+    <rect x="506" y="190" width="174" height="176" rx="26"/>
+  </g>
+  <g font-family="Inter, Arial" fill="#1F2933" text-anchor="middle">
+    <circle cx="167" cy="230" r="34" fill="#FAF7F2"/><circle cx="380" cy="174" r="34" fill="#FAF7F2"/><circle cx="593" cy="250" r="34" fill="#FAF7F2"/>
+    <text x="167" y="302" font-size="20" font-weight="900">Parent</text><text x="380" y="247" font-size="20" font-weight="900">You</text><text x="593" y="322" font-size="20" font-weight="900">Family</text>
+    <text x="167" y="330" font-size="14" fill="#667085">consent-based</text><text x="380" y="275" font-size="14" fill="#667085">health trends</text><text x="593" y="350" font-size="14" fill="#667085">shared support</text>
+  </g>
+  <path d="M254 265 C284 232 296 219 329 208" fill="none" stroke="#0F766E" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <path d="M467 220 C502 228 515 235 540 255" fill="none" stroke="#F97363" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <rect x="236" y="405" width="288" height="54" rx="27" fill="#0F766E"/>
+  <text x="380" y="439" text-anchor="middle" font-family="Inter, Arial" font-size="18" font-weight="900" fill="#fff">Prevention is often a family journey</text>
+</svg>

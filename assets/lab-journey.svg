@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Lab testing journey illustration">
+  <rect width="900" height="520" rx="48" fill="#FFF9F2"/>
+  <path d="M90 270 C200 120 285 395 390 248 C497 97 575 419 810 210" fill="none" stroke="#99F6E4" stroke-width="28" stroke-linecap="round" opacity=".44"/>
+  <path d="M90 270 C200 120 285 395 390 248 C497 97 575 419 810 210" fill="none" stroke="#0F766E" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Inter, Arial" fill="#1F2933">
+    <g><circle cx="90" cy="270" r="36" fill="#fff" stroke="#E5E7EB" stroke-width="2"/><text x="90" y="278" text-anchor="middle" font-size="24" font-weight="900">1</text><text x="52" y="338" font-size="18" font-weight="900">Risk</text><text x="32" y="363" font-size="13" fill="#667085">assessment</text></g>
+    <g><circle cx="292" cy="315" r="36" fill="#fff" stroke="#E5E7EB" stroke-width="2"/><text x="292" y="323" text-anchor="middle" font-size="24" font-weight="900">2</text><text x="240" y="383" font-size="18" font-weight="900">Panel</text><text x="228" y="408" font-size="13" fill="#667085">recommendation</text></g>
+    <g><circle cx="452" cy="180" r="36" fill="#fff" stroke="#E5E7EB" stroke-width="2"/><text x="452" y="188" text-anchor="middle" font-size="24" font-weight="900">3</text><text x="414" y="112" font-size="18" font-weight="900">Lab</text><text x="386" y="137" font-size="13" fill="#667085">testing</text></g>
+    <g><circle cx="610" cy="330" r="36" fill="#fff" stroke="#E5E7EB" stroke-width="2"/><text x="610" y="338" text-anchor="middle" font-size="24" font-weight="900">4</text><text x="560" y="398" font-size="18" font-weight="900">Report</text><text x="542" y="423" font-size="13" fill="#667085">plain language</text></g>
+    <g><circle cx="810" cy="210" r="36" fill="#F97363"/><text x="810" y="218" text-anchor="middle" font-size="24" font-weight="900" fill="#fff">5</text><text x="770" y="142" font-size="18" font-weight="900">Action</text><text x="744" y="167" font-size="13" fill="#667085">follow-up</text></g>
+  </g>
+</svg>
