@@ -1,48 +1,45 @@
 # ANTES Health Landing Page
 
-Landing page estática para ANTES Health, lista para publicar con GitHub Pages.
+Static GitHub Pages landing page for ANTES Health.
 
-## Archivos
+## Files
 
-- `index.html`: contenido de la página.
-- `styles.css`: diseño responsive.
-- `script.js`: menú móvil.
+- `index.html`: page structure and content.
+- `styles.css`: responsive visual design.
+- `script.js`: mobile navigation.
 
-## Cómo publicarla con GitHub Pages
+## Before publishing
 
-1. Crea un repositorio en GitHub, por ejemplo: `antes-health`.
-2. Sube estos archivos a la raíz del repositorio.
-3. En GitHub, entra a **Settings → Pages**.
-4. En **Build and deployment**, selecciona:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-5. Guarda. La página saldrá en una URL tipo:
-   `https://TU-USUARIO.github.io/antes-health/`
-
-## Formulario
-
-El formulario usa Formspree como placeholder:
+1. Replace the form action in `index.html`:
 
 ```html
-action="https://formspree.io/f/REEMPLAZA_ESTE_ID"
+action="https://formspree.io/f/REPLACE_THIS_ID"
 ```
 
-Puedes reemplazarlo por:
+You can use Formspree, Tally, Typeform, Google Forms, or another form provider.
 
-- Formspree
-- Tally
-- Google Forms
-- Typeform
+2. Confirm all milestone claims are accurate before publishing, especially:
+   - Impact Startup Competition · Peru
+   - Claude Startups Program
+   - Cleveland NeuroDesign Workshop
+   - IEEE Summer International Leadership Academy
 
-## Personalización rápida
+3. If needed, edit the founder/team sentence in the Founder section:
 
-Edita variables de color en `styles.css`:
-
-```css
-:root {
-  --primary: #146c5c;
-  --accent: #c8efe2;
-}
+```html
+The company is currently built by a two-person team, with the founder working full-time on the project.
 ```
 
+## Deploy with GitHub Pages
+
+1. Upload these files to the root of your GitHub repository.
+2. Go to **Settings → Pages**.
+3. Choose **Deploy from a branch**.
+4. Select branch `main` and folder `/root`.
+5. Save.
+
+Your site will be available at a URL like:
+
+```text
+https://YOUR-USER.github.io/antes-health/
+```
